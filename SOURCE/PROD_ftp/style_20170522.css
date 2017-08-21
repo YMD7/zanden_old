@@ -1,0 +1,1493 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*===================================================================
+
+
+                        1. General Settings
+
+
+===================================================================*/
+/**********************************
+
+      ++  Reset  ++
+
+**********************************/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+	margin:0;
+	padding:0;
+	line-height:100%;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+	line-height:100%;
+}
+img{
+	line-height:0;
+}
+input,textarea,fieldset,img{
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var{
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul{
+	list-style:none;
+}
+caption,th{
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:100%;
+	font-weight:normal;
+	line-height:100%;
+}
+a{
+	color: #666666;
+	text-decoration:none;
+}
+a:focus{
+	outline:none;
+}
+q:before,q:after{
+	content:'';
+}
+abbr,acronym{
+	border:0;
+}
+
+/**********************************
+
+      ++  clear fix  ++
+
+**********************************/
+/* for modern brouser */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+/* IE7,MacIE5 */
+.clearfix {
+  display: inline-block;
+}
+/* WinIE6 below, Exclude MacIE5 \*/
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/**/
+
+/**********************************
+
+      ++  Common  ++
+
+**********************************/
+html, body{
+	height:100%;
+}
+/* Default */
+/*
+body{
+	background:#ececec;
+	
+	color:#666666;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:14px;
+}
+*/
+/* Award2014 */
+body{
+	background:#fff;
+	color:#666666;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:14px;
+}
+body > div#container{
+    height:auto;
+}
+div#container{
+	position:relative;
+    height:100%;
+    min-height:100%;
+}
+div.floatRight {
+	float: right;
+}
+.hidden {
+	display: none;
+}
+div#util {
+	position: relative;
+	z-index: 1;
+	height: 20px;
+	padding: 10px 10px 0 0;
+}
+div.fb-like {
+	float: right;
+	width: auto !important;
+	padding: 0 14px 0;
+}
+div.lang-text {
+	float: right;
+	cursor: pointer;
+	margin: 0 15px 0 0;
+	padding: 4px 0 0;
+
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	text-decoration: underline;
+}
+div.lang-text:hover {
+	color: #4177FF;
+}
+div#langSelect {
+	float: right;
+	position: absolute;
+	top: 22px;
+	margin: 0 20px 0 0;
+}
+div#langSelect ul {
+	background: #F0F0EA;
+	box-shadow: 2px 2px 0px #D4D4CF;
+}
+div.up {
+	position: relative;
+	left: 8px;
+	border: 16px solid transparent;
+	border-bottom-color: #F0F0EA;
+	width: 0;
+	height: 0;
+}
+div#langSelect li {
+	text-align: center;
+}
+div#langSelect li a {
+	display: block;
+	background: #F0F0EA;
+	padding: 7px 16px;
+	font-size: 12px;
+}
+div#langSelect li a:hover {
+	background: #DBDBD6;
+	color: #4177FF;
+}
+div#main {
+	position: relative;
+	z-index: 0;
+	top: -34px;
+	clear: both;
+}
+div.wrapper{
+	width:960px;
+	margin:0 auto;
+	padding:0 10px 10px;
+}
+div#right_column{
+	float:right;
+	width:640px;
+}
+div#BTT {
+	float: right;
+}
+div#BTT a{
+	padding-bottom:30px;
+	
+	color:#666666;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:16px;
+	font-style:italic;
+}
+div#BTT a:hover{
+	color:#4177ff;
+	text-decoration:underline;
+}
+
+/**********************************
+
+      ++  header  ++
+
+**********************************/
+div#header{
+	position:relative;
+	z-index:999;
+	border-top:8px solid #d7d7cc;
+	background:#fff;
+	webkit-box-shadow:0 0 1px rgb(210,210,210);
+	   moz-box-shadow:0 0 1px rgb(210,210,210);
+	       box-shadow:0 0 1px rgb(210,210,210);
+	height:103px;
+}
+div#header .wrapper {
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+h1{
+	float:left;
+	background:url(images/logo@800.gif) no-repeat center center;
+	background-size: 80%;
+	width:150px;
+	height:100px;
+	padding-top: 2px;
+	
+	text-indent:-9999px;
+}
+div#gnavi{
+	-webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+
+	position:relative;
+	float:right;
+	width:70%;
+	height:103px;
+}
+div#gnavi ul {
+	float: right;
+}
+div#gnavi li{
+	float:left;
+	height:103px;
+}
+div#gnavi li.current{
+	background:#eee;
+}
+div#gnavi a{
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+	height:103px;
+	padding:0 24px;
+	color: #888;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 14px;
+}
+div#gnavi a:hover{
+	background:#ddd;
+}
+div#gnavi img{
+	padding-top:45px;
+}
+
+/*===================================================================
+
+
+                        2. main
+
+
+===================================================================*/
+/**********************************
+
+      ++  Home  ++
+
+**********************************/
+.hero {
+	background: -moz-linear-gradient(top, #ffffff 0%, #efefef 88%, #efefef 90%, #ffffff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#efefef 88%,#efefef 90%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ffffff 0%,#efefef 88%,#efefef 90%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+div#image{
+	background: url(images/frontpage-m3000mk2.png) no-repeat center 270px;
+	background-size: 95%;
+	width:483px;
+	height:335px;
+	margin:0 auto;
+	padding: 114px 0 20px;
+	text-align:center;
+}
+div#image h4 img{
+	height: 35px;
+}
+div#news {
+	box-shadow: 0 1px 2px 0 rgba(100, 100, 100, 0.3) inset;
+	height: 200px;
+	margin: 45px 0 0;
+	padding: 50px 0 110px;
+	text-align: center;
+}
+#news.jp {
+	height: 460px;
+}
+div#news div.wrapper > p {
+	padding: 0 0 20px;
+	color: #3399ff;
+	font-family: 'Cardo', times, serif;
+	font-size: 18px;
+	letter-spacing: 0.6px;
+}
+div#news ul {
+	width: 580px;
+	height: 276px;
+	margin: 0 auto;
+}
+div#news ul li {
+	width: 280px;
+	margin: 0 auto;
+}
+div#news ul li:first-child {
+	float: left;
+}
+div#news ul li:last-child {
+	float: right;
+}
+div#news li > a {
+	display: block;
+	border-bottom: 6px solid #e5e5e5;
+	-webkit-transition:background-color 0.3s linear;
+	   -moz-transition:background-color 0.3s linear;
+	        transition:background-color 0.3s linear;
+	width: 280px;
+	height: 200px;
+}
+div#news li a.room-image {
+	background: #f1f1f1 url(images/room-image@520x354.jpg) no-repeat 0px -20px;
+	background-size: cover;
+}
+div#news li a.model-zva {
+	background: #f1f1f1 url(images/zva@520x374.png) no-repeat 0px -28px;
+	background-size: 100%;
+}
+div#news li a.dl-cat2017 {
+	background: #f1f1f1 url(images/cat2017_cover.jpg) no-repeat center;
+	background-size: contain;
+}
+div#news li a.model3000mk2 {
+	background: #f1f1f1 url(images/model3000mk2@520x374.png) no-repeat 0px -8px;
+	background-size: 100%;
+}
+div#news li a:hover {
+	background-color: #fff;
+}
+div#news li a p {
+	height: 200px;
+	text-indent: -9999px;
+}
+div#news li a span {
+	display: block;
+	background: #fff;
+	padding: 10px 0 4px;
+	font-family:'Cardo', times, serif;
+	font-size: 12px;
+	line-height: 140%;
+}
+div#news li > span {
+	display: inline-block;
+	padding-top: 18px;
+}
+div#news li > span > a {
+	color: #3399ff;
+}
+div#award_logo_img {
+	z-index: 999;
+	position: relative;
+	top: -30px;
+	left: 125px;
+	transform: scale(0.80, 0.80);
+	background: url(images/product_of_the_year_2014.png) no-repeat top left;
+	width: 200px;
+	height: 142px;
+}
+div#award2014 {
+	position: relative;
+	background: #fff;
+	box-shadow: 0 1px 2px 0 rgba(100, 100, 100, 0.3) inset;
+	height: 280px;
+	text-align: center;
+}
+div#award2014 p {
+	color: #aaa;
+	font-family: 'Baskerville', 'Cardo', times, serif;
+	font-size: 20px;
+}
+div#award2014 ul {
+	width: 580px;
+	margin: 40px auto;
+}
+div#award2014 ul li {
+	border-bottom: 6px solid #e5e5e5;
+	width: 280px;
+}
+div#award2014 ul li:nth-child(1) {
+	float: left;
+}
+div#award2014 ul li:nth-child(2) {
+	float: right;
+}
+div#award2014 li a {
+	display: block;
+	-webkit-transition:background-color 0.3s linear;
+	   -moz-transition:background-color 0.3s linear;
+	        transition:background-color 0.3s linear;
+	width: 280px;
+	height: 200px;
+}
+div#award2014 li a.model-3100 {
+	background: #f1f1f1 url(images/m3100@520x374.png) no-repeat 20px -55px;
+	background-size: 130%;
+}
+div#award2014 li a.model-8120 {
+	background: #f1f1f1 url(images/m8120@520x374.png) no-repeat 20px -35px;
+	background-size: 120%;
+}
+div#award2014 li a:hover {
+	background-color: #fff;
+}
+div#award2014 li a p {
+	height: 172px;
+	text-indent: -9999px;
+}
+div#award2014 li a span {
+	display: block;
+	background: #fff;
+	padding: 10px 0 4px;
+	font-family:'Cardo', times, serif;
+	font-size: 12px;
+}
+h4.cardo{
+	font-family:'Cardo', times, serif;
+}
+
+/**********************************
+
+      ++  Product  ++
+
+**********************************/
+body.product{
+	background:#fcfcfc;
+}
+div.product{
+	border-bottom: solid 14px #ddd;
+	padding: 60px 0 60px;
+}
+div.spacer {
+	height: 34px;
+}
+div.product h2{
+	border-bottom: 1px solid #DBD7D4;
+	padding: 0 0 6px 18px;
+	color: #444444;
+	font-size: 32px;
+	letter-spacing: 0.4px;
+}
+div.product-box {
+	padding: 90px 0 70px;
+}
+div.product-box h3 {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	color: #444444;
+	font-size: 48px;
+	text-align: center;
+}
+div.product-box h3.modern {
+	background-image: url(images/product_product-line-logo_modern.png);
+	margin: 0 0 90px;
+	text-indent: -9999px;
+}
+div.product-box h3.classic {
+	background-image: url(images/product_product-line-logo_classic.png);
+	margin: 0 0 60px;
+	text-indent: -9999px;
+}
+div.product-box h3.accessory {
+	margin: 0 0 80px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 44px;
+	font-style: normal;
+	font-weight: 300;
+}
+div.product-tile {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+}
+div.product-container {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 0 12px;
+}
+div.product-category-name {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+}
+div.product-category-name-border {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+div.product-category-name-text {
+	padding: 0 12px;
+	color: #444444;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 18px;
+}
+div.product-picture {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	background-color: #f4f4f4;
+	height: 250px;
+	margin: 30px 0 0;
+}
+div.product-category-accessory div.product-container {
+	max-width: 300px;
+}
+div.product-picture img {
+	width: 90%;
+}
+div.product-name {
+	padding: 24px 0 0;
+	color: #AAAAAA;
+	font-size: 12px;
+	text-align: center;
+}
+div.product-container > a > div.product-name span {
+	-webkit-transition: color .25s linear;
+	   -moz-transition: color .25s linear;
+	    -ms-transition: color .25s linear;
+	     -o-transition: color .25s linear;
+	        transition: color .25s linear;
+}
+div.product-container > a:hover > div.product-name span {
+	color: #3399ff;
+}
+
+/**********************************
+
+      ++  Product-Indiv  ++
+
+**********************************/
+/*
+    共通設定
+*/
+div.indiv{
+	position:relative;
+	background:#f2f2f2 url(images/indiv-topBG.gif) repeat-x top;
+	height:553px;
+}
+h2{
+	color:#5f5f5f;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:21px;
+	text-align:left;
+}
+div.indiv div#right_column h3{
+	color:#60693b;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:32px;
+	line-height:35px;
+	text-align:left;
+}
+div.indiv h4{
+	color:#5f5f5f;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:24px;
+	text-align:left;
+}
+div.indiv h4 span{
+	font-size:14px;
+}
+div.indiv div#top{
+	height:530px;
+	padding-top:40px;
+	
+	text-align:center;
+}
+div#intro,
+div#spec{
+	border:8px solid #999;
+	background:#fff;
+	margin:5px 0 30px;
+	padding:17px;
+	
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+div#gallery{
+	border-bottom:8px solid #999;
+	background:#fff;
+	margin:5px 0 30px;
+}
+div#gallery div.box{
+	border-top:8px solid #999;
+	border-left:8px solid #999;
+	border-right:8px solid #999;
+	background:#fff;
+	
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:12px;
+}
+div#intro p{
+	font-size:16px;
+	line-height:24px;
+}
+div#intro p:first-letter{
+	font-size:32px;
+	letter-spacing:2px;
+}
+div#intro ul li{
+	margin-bottom: 2px;
+	line-height: 22px;
+}
+div#spec dt{
+	margin:10px 0 2px;
+	
+	font-size:16px;
+	font-weight:bold;
+}
+div#spec dt:first-child{
+	margin-top:0;
+}
+div#spec dd{
+	background:url(images/hifun.gif) no-repeat left center;
+	padding:4px 0 4px 12px;
+	
+	font-size:12px;
+}
+div#intro ul li:hover,
+div#spec dd:hover{
+	background:#555;
+	
+	color:#f2f2f2;
+}
+div#gallery div.box h5{
+	margin-top:30px;
+	
+	font-size:32px;
+	font-weight:normal;
+	font-style:italic;
+}
+div#gallery div.box i.small{
+	font-size:20px;
+	margin-left:0;
+}
+div#gallery div.box span{
+	opacity:0;
+	margin-left:10px;
+	font-size:12px;
+}
+div#gallery div.box a:hover span{
+	opacity:1.0;
+}
+div#gallery div.box a{
+	position:relative;
+	display:block;
+	width:590px;
+	height:55px;
+	padding:13px 17px 17px;
+
+	color:#9f9f9f;
+	font-size:15px;
+}
+
+/*
+    ギャラリーサムネイルの指定
+*/
+/*  m9600  */
+div#gallery.m9600 div.first a{
+	background:url(images/gallery/thumbs/M9600-1thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m9600 div.first a:hover{
+	background:url(images/gallery/thumbs/M9600-1thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m9600 div.second a{
+	background:url(images/gallery/thumbs/M9600-3thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m9600 div.second a:hover{
+	background:url(images/gallery/thumbs/M9600-3thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m9600 div.third a{
+	background:url(images/gallery/thumbs/M9600-4thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m9600 div.third a:hover{
+	background:url(images/gallery/thumbs/M9600-4thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m9600 div.fourth a{
+	background:url(images/gallery/thumbs/M9600-5thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m9600 div.fourth a:hover{
+	background:url(images/gallery/thumbs/M9600-5thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m9600 div.fifth a{
+	background:url(images/gallery/thumbs/M9600-5thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m9600 div.fifth a:hover{
+	background:url(images/gallery/thumbs/M9600-5thumb-hover.jpg) no-repeat right center;
+}
+
+/*  m1200  */
+div#gallery.m1200 div.first a{
+	background:url(images/gallery/thumbs/M1200-1thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m1200 div.first a:hover{
+	background:url(images/gallery/thumbs/M1200-1thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m1200 div.second a{
+	background:url(images/gallery/thumbs/M1200-2thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m1200 div.second a:hover{
+	background:url(images/gallery/thumbs/M1200-2thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m1200 div.third a{
+	background:url(images/gallery/thumbs/dc-1thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m1200 div.third a:hover{
+	background:url(images/gallery/thumbs/dc-1thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m1200 div.fourth a{
+	background:url(images/gallery/thumbs/dc-2thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m1200 div.fourth a:hover{
+	background:url(images/gallery/thumbs/dc-2thumb-hover.jpg) no-repeat right center;
+}
+
+/*  m2000  */
+div#gallery.m2000 div.first a{
+	background:url(images/gallery/thumbs/M2000-1thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m2000 div.first a:hover{
+	background:url(images/gallery/thumbs/M2000-1thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m2000 div.second a{
+	background:url(images/gallery/thumbs/M2000-2thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m2000 div.second a:hover{
+	background:url(images/gallery/thumbs/M2000-2thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m2000 div.third a{
+	background:url(images/gallery/thumbs/M2000-3thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m2000 div.third a:hover{
+	background:url(images/gallery/thumbs/M2000-3thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m2000 div.fourth a{
+	background:url(images/gallery/thumbs/M2000-4thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m2000 div.fourth a:hover{
+	background:url(images/gallery/thumbs/M2000-4thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m2000 div.fifth a{
+	background:url(images/gallery/thumbs/M2000-5thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m2000 div.fifth a:hover{
+	background:url(images/gallery/thumbs/M2000-5thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m2000 div.sixth a{
+	background:url(images/gallery/thumbs/M2000-6thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m2000 div.sixth a:hover{
+	background:url(images/gallery/thumbs/M2000-6thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m2000 div.seventh a{
+	background:url(images/gallery/thumbs/M2000-7thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m2000 div.seventh a:hover{
+	background:url(images/gallery/thumbs/M2000-7thumb-hover.jpg) no-repeat right center;
+}
+
+/*  m2500  */
+div#gallery.m2500 div.first a{
+	background:url(images/gallery/thumbs/M2500-1thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m2500 div.first a:hover{
+	background:url(images/gallery/thumbs/M2500-1thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m2500 div.second a{
+	background:url(images/gallery/thumbs/M2500-2thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m2500 div.second a:hover{
+	background:url(images/gallery/thumbs/M2500-2thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m2500 div.third a{
+	background:url(images/gallery/thumbs/M2500-3thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m2500 div.third a:hover{
+	background:url(images/gallery/thumbs/M2500-3thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m2500 div.fourth a{
+	background:url(images/gallery/thumbs/M2500-4thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m2500 div.fourth a:hover{
+	background:url(images/gallery/thumbs/M2500-4thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m2500 div.fifth a{
+	background:url(images/gallery/thumbs/M2500-5thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m2500 div.fifth a:hover{
+	background:url(images/gallery/thumbs/M2500-5thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m2500 div.sixth a{
+	background:url(images/gallery/thumbs/M2500-6thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m2500 div.sixth a:hover{
+	background:url(images/gallery/thumbs/M2500-6thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m2500 div.seventh a{
+	background:url(images/gallery/thumbs/M2500-7thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m2500 div.seventh a:hover{
+	background:url(images/gallery/thumbs/M2500-7thumb-hover.jpg) no-repeat right center;
+}
+
+/*  m300  */
+div#gallery.m300 div.first a{
+	background:url(images/gallery/thumbs/M300-1thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m300 div.first a:hover{
+	background:url(images/gallery/thumbs/M300-1thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m300 div.second a{
+	background:url(images/gallery/thumbs/M300-2thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m300 div.second a:hover{
+	background:url(images/gallery/thumbs/M300-2thumb-hover.jpg) no-repeat right center;
+}
+
+/*  m3000  */
+div#gallery.m3000 div.first a{
+	background:url(images/gallery/thumbs/M3000-1thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m3000 div.first a:hover{
+	background:url(images/gallery/thumbs/M3000-1thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m3000 div.second a{
+	background:url(images/gallery/thumbs/M3000-2thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m3000 div.second a:hover{
+	background:url(images/gallery/thumbs/M3000-2thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m3000 div.third a{
+	background:url(images/gallery/thumbs/dc-1thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m3000 div.third a:hover{
+	background:url(images/gallery/thumbs/dc-1thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m3000 div.fourth a{
+	background:url(images/gallery/thumbs/dc-2thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m3000 div.fourth a:hover{
+	background:url(images/gallery/thumbs/dc-2thumb-hover.jpg) no-repeat right center;
+}
+
+/*  m5000  */
+div#gallery.m5000 div.first a{
+	background:url(images/gallery/thumbs/M5000-1thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m5000 div.first a:hover{
+	background:url(images/gallery/thumbs/M5000-1thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m5000 div.second a{
+	background:url(images/gallery/thumbs/M5000-2thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m5000 div.second a:hover{
+	background:url(images/gallery/thumbs/M5000-2thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m5000 div.third a{
+	background:url(images/gallery/thumbs/dc-1thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m5000 div.third a:hover{
+	background:url(images/gallery/thumbs/dc-1thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.m5000 div.fourth a{
+	background:url(images/gallery/thumbs/dc-2thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.m5000 div.fourth a:hover{
+	background:url(images/gallery/thumbs/dc-2thumb-hover.jpg) no-repeat right center;
+}
+
+/*  DSC-1  */
+div#gallery.dsc-1 div.first a{
+	background:url(images/gallery/thumbs/dsc1-1thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.dsc-1 div.first a:hover{
+	background:url(images/gallery/thumbs/dsc1-1thumb-hover.jpg) no-repeat right center;
+}
+div#gallery.dsc-1 div.second a{
+	background:url(images/gallery/thumbs/dsc1-2thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.dsc-1 div.second a:hover{
+	background:url(images/gallery/thumbs/dsc1-2thumb-hover.jpg) no-repeat right center;
+}
+
+/*  UL-15A  */
+div#gallery.ul-15a div.first a{
+	background:url(images/gallery/thumbs/ac1-1thumb.jpg) no-repeat right center;
+	-webkit-transition:background-image 0.3s linear;
+	   -moz-transition:background-image 0.3s linear;
+	        transition:background-image 0.3s linear;
+}
+div#gallery.ul-15a div.first a:hover{
+	background:url(images/gallery/thumbs/ac1-1thumb-hover.jpg) no-repeat right center;
+}
+
+/*
+    製品画像
+*/
+img[rel="m120"]{
+	margin-top:10px;
+}
+img[rel="m1200"]{
+	margin-top:10px;
+}
+img[rel="m1300"]{
+	margin-top:208px;
+}
+img[rel="m3000"]{
+	margin-top:10px;
+}
+img[rel="m3100"]{
+	margin-top:10px;
+}
+img[rel="m300"]{
+	margin-top:200px;
+}
+img[rel="m6000"]{
+	margin-top:65px;
+}
+img[rel="m8120"]{
+	margin-top:10px;
+}
+img[rel="m9600"]{
+	margin-top:10px;
+}
+img[rel="m2500"]{
+	margin-top:184px;
+}
+img[rel="m2000"]{
+	margin-top:143px;
+}
+img[rel="m5000"]{
+	margin-top:207px;
+}
+img[rel="ac-1"]{
+	margin-top:117px;
+}
+img[rel="dsc-1"]{
+	margin-top:188px;
+}
+img[rel="zva-1"]{
+	margin-top:16px;
+}
+img[rel="tpm-1"]{
+	margin-top:16px;
+}
+/*
+    サブナビ
+*/
+div#sub_navi{
+	float:left;
+	border:solid 4px #fff;
+    background:rgb(240, 241, 231);
+	width:220px;
+	margin-top:34px;
+	padding:23px 18px 15px;
+	-webkit-box-shadow:0px 0px 1px #eee;
+       -moz-box-shadow:0px 0px 1px #eee;
+	        box-shadow:0px 0px 1px #eee;
+	
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+div#sub_navi h3{
+	position:relative;
+	left:-2px;
+	padding:3px 0 4px;
+	
+	color:#5c6244;
+	font-size:21px;
+}
+div#sub_navi h3:first-letter{
+	font-size:25px;
+}
+div#sub_navi dl{
+	margin-bottom:25px;
+}
+div#sub_navi dt{
+	background:url(images/arrow-right.gif) no-repeat left center;
+	margin:12px 0 4px;
+	
+	color:#717759;
+	text-indent:8px;
+}
+div#sub_navi dd{
+	padding:4px 0 2px;
+	
+	color:#878c71;
+	font-size:14px;
+	text-indent:12px;
+}
+div#sub_navi dd.current{
+	background:#fff;
+}
+div#sub_navi dd:hover{
+	background:#bcc59f;
+	
+	color:#fff;
+}
+
+/**********************************
+
+      ++  Listening Room  ++
+
+**********************************/
+div.listening {
+	padding-bottom: 50px;
+}
+div.listening h2 {
+	border-bottom: 1px solid #DBD7D4;
+	padding: 0 0 6px 18px;
+	color: #444444;
+	font-size: 32px;
+	letter-spacing: 0.4px;
+}
+div.listening .desc {
+	margin: 60px 0;
+	padding: 0 0 0 18px;
+	color: #666;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 16px;
+}
+div.listening .desc > p{
+	line-height: 150%;
+}
+div.listening .iframe-wrapper {
+	text-align: center;
+}
+
+
+/**********************************
+
+      ++  Where to Buy  ++
+
+**********************************/
+div.buy{
+	background:url(images/buy_BG.gif) repeat-x;
+	height:406px;
+}
+div.buy h2{
+	background:url(images/buyTag.gif) no-repeat 30px 133px;
+	height:406px;
+	
+	text-indent:-9999px;
+}
+div.buy div.wrapper{
+	background:url(images/buyM1200.jpg) no-repeat 130px 212px;
+	height:406px;
+}
+div#shoplist{
+	border:8px solid #999;
+	background:#ffffff;
+	width:800px;
+	margin:20px auto 50px;
+}
+div#shoplist table{
+	width:780px;
+	margin:10px auto;
+
+  color:#666666;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:12px;
+}
+div#shoplist tr:hover{
+	background:#f5f5f5;
+}
+div#shoplist th, div#shoplist td{
+	padding:15px 0 20px 35px;
+	
+    vertical-align:top;
+	line-height:15px;
+}
+div#shoplist h3, div#shoplist h4, div#shoplist h5{
+	font-weight:bold;
+	font-size:18px;
+	line-height:22px;
+}
+div#shoplist td em{
+	font-style:italic;
+}
+div#shoplist td a{
+	color:#3399ff;
+}
+
+/**********************************
+
+      ++  Company  ++
+
+**********************************/
+body.company{
+	background:#ffffff;
+}
+div.company{
+    background:url(images/companyBG.gif) repeat-x top #ffffff ;
+	height:461px;
+}
+div.company-front{
+	background:url(images/companyBG.jpg) no-repeat center top;
+	height:881px;
+}
+div.company-front div.wrapper{
+	padding-bottom: 0;
+}
+div#content{
+	border-right:1px solid #f5f5f5;
+	background:url(images/companyWhiteBG.png) repeat-y right;
+	width:953px;
+	padding: 50px 0 10px;
+
+	color:#555555;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:16px;
+}
+div.text{
+	clear: both;
+	margin-bottom:40px;
+}
+#main.company div#content h2{
+	background:url(images/companyTAG.png) no-repeat 20px;
+	width:960px;
+	height:40px;
+	margin: 0 0 20px;
+	text-indent:-9999px;
+}
+div#content a:hover{
+	text-decoration:underline;
+}
+div#content h3{
+	padding:0 0 15px 180px;
+	
+	color:#3399ff;
+	-webkit-text-shadow: 1px 1px 1px #fff;
+	   -moz-text-shadow: 1px 1px 1px #fff;
+	        text-shadow: 1px 1px 1px #fff;
+	font-size:26px;
+}
+div#content h4{
+	padding:10px 0 5px;
+	
+	font-size:24px;
+	text-align:center;
+}
+div#content p{
+	width:550px;
+	margin:0 auto;
+	padding-bottom:15px;
+	
+	text-indent:0.5em;
+	line-height:20px;
+	-webkit-text-shadow:1px 1px 0 #f8f8f8;
+       -moz-text-shadow:1px 1px 0 #f8f8f8;
+            text-shadow:1px 1px 0 #f8f8f8;
+}
+body.jp div#content p{
+	line-height: 26px;
+}
+div#content p.signature{
+	padding-top: 20px;
+	text-indent:0;
+	text-align:right;
+}
+div#content p.no_indent{
+	text-indent:0;
+}
+div#content div.text img {
+	float: right;
+	position: relative;
+	top: -80px;
+}
+
+/**********************************
+
+      ++  Awards  ++
+
+**********************************/
+#main.award .content-header {
+	background-color: #f6f6f6;
+	height: 120px;
+}
+#main.award .content-header h2 {
+	background: url(images/awardTAG.png) no-repeat center center;
+	height: 120px;
+	text-align: center;
+	text-indent: -9999px;
+}
+#main.award #content {
+	border: none;
+	width: 100%;
+	padding-top: 120px;
+}
+#main.award #content .product {
+	border: none;
+	clear: both;
+}
+#main.award #content .product .product-name{
+	height: 72px;
+}
+#main.award #content .product .product-name h3 {
+	border-bottom: 4px solid #eee;
+	background-image: url(images/product_name_all.gif);
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}
+#main.award #content .product .product-name h3.m120 {
+	background-position: left -391px;
+}
+#main.award #content .product .product-name h3.m1200 {
+	background-position: left -129px;
+}
+#main.award #content .product .product-name h3.m1000 {
+	background-position: left 0;
+}
+#main.award #content .product .product-name h3.m3000 {
+	background-position: left -260px;
+}
+#main.award #content .product .product-name h3.m3100 {
+	background-position: left -303px;
+}
+#main.award #content .product .product-name h3.m7000 {
+	background-position: left -42px;
+}
+#main.award #content .product .product-name h3.m8120 {
+	background-position: left -347px;
+}
+#main.award #content .product .product-name h3.m2500 {
+	background-position: left -216px;
+}
+#main.award #content .product .product-name h3.m2000 {
+	background-position: left -173px;
+}
+#main.award #content .product .product-name h3.m5000 {
+	background-position: left -86px;
+}
+#main.award #content .product .left {
+	float: left;
+	width: 530px;
+}
+#main.award #content .product .left .chronology ol li {
+	margin-bottom: 60px;
+}
+#main.award #content .product .left .chronology ol li h4 {
+	border-bottom: 1px solid #dbd7d4;
+	padding-bottom: 6px;
+	color: #444444;
+	font-size: 28px;
+	text-align: left;
+}
+#main.award #content .product .left .chronology ol li h4 span.model-name {
+	display: inline-block;
+	color: #9c9c9c;
+	font-size: 18px;
+	text-indent: 18px;
+}
+#main.award #content .product .left .chronology ol li .titles {
+	float: left;
+	width: 70%;
+	margin-top: 14px;
+	padding-bottom: 30px;
+}
+#main.award #content .product .left .chronology ol li .titles strong {
+	display: block;
+	padding-bottom: 12px;
+	color: #3399ff;
+	font-family: "arno-pro-display";
+	font-weight: 300;
+	font-size: 22px;
+	letter-spacing: 0.8px;
+}
+#main.award #content .product .left .chronology ol li .titles .media-name {
+	display: block;
+	padding-bottom: 12px;
+	color: #656565;
+	font-family: "arno-pro-display";
+	font-weight: 300;
+	font-size: 22px;
+	letter-spacing: 0.4px;
+}
+#main.award #content .product .left .chronology ol li .titles .country {
+	color: #b2b2b2;
+	font-size: 12px;
+	font-style: italic;
+}
+#main.award #content .product .left .chronology ol li .award-logo {
+	float: right;
+	width: 30%;
+	margin-top: 14px;
+	text-align: center;
+}
+#main.award #content .product .left .chronology ol li .award-logo img {
+	max-width: 87%;
+}
+#main.award #content .product .right {
+	float: right;
+	width: 400px;
+}
+#main.award #content .product .right .product-image .image-box {
+	background-color: #f8f8f8;
+	width: 400px;
+	height: 400px;
+}
+#main.award #content .product .right .product-image .image-box img {
+	width: 400px;
+}
+#main.award #content .product .right .product-image .image-box img[alt="Model 8120"] {
+	margin-top: 40px;
+}
+#main.award #content .product .right .product-link {
+	display: block;
+	padding: 12px;
+	color: #8a8a8a;
+	text-align: right;
+}
+
+/*===================================================================
+
+
+                        3. footer
+
+
+===================================================================*/
+footer{
+	clear: both;
+	border-top: 2px solid #f1f1f1;
+	width: 980px;
+	height: 10px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+p.copyright {
+	color: #ccc;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 9px;
+	text-align: center;
+}

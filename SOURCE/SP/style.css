@@ -1,0 +1,661 @@
+/*===================================================================
+
+  General Settings
+
+===================================================================*/
+/** Base *******************************/
+/*_ Reset _____*/
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+
+/*_ HTML _____*/
+html {
+	font-size: 6.25%;
+}
+
+/*_ Body _____*/
+body {
+	background: #888;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Libre Baskerville', "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+}
+
+/*_ Wrapper _____*/
+#wrapper {
+	background: #fff;
+	max-width: 690px;
+	margin: 0 auto;
+}
+
+
+/** Header *******************************/
+/*_ Logo _____*/
+#logo h1 {
+	background: url(images/common/logo.gif) no-repeat center;
+	height: 70px;
+	text-indent: -9999px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:2),
+                  (min-resolution: 2dppx){
+  #logo h1 {
+    background: url(images/common/logo@2x.gif) no-repeat center;
+    background-size: 120px;
+  }
+}
+
+/*_ Global Nav _____*/
+#global_nav {
+	height: 36px;
+}
+#global_nav li {
+	float: left;
+	border-right: 1px solid #e3e3e3;
+	background: #c9c9c9;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33%;
+	height: 36px;
+	text-align: center;
+}
+#global_nav li.current {
+	background: #bcbcb5;
+	box-shadow: 0 -2px #787a66 inset;
+}
+#global_nav li:nth-child(3) {
+	border-right: 1px solid #c9c9c9;
+}
+#global_nav a {
+	position: relative;
+	top: 39%;
+	color: #fff;
+	font-size: 9.5rem;
+}
+
+
+/*===================================================================
+
+  Main
+
+===================================================================*/
+/** Common *******************************/
+#main section {
+	border-bottom: 1px solid #999;
+	min-height: 50px;
+	height: auto !important;
+	height: 50px;
+    text-align: center;
+}
+
+/* add clearfix to "#main section" */
+#main section:after {
+    visibility: hidden;
+    display: block;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+/*_ Header _____*/
+h2 {
+	padding: 26px 0 15px;
+	color: #666;
+	font-size: 13.0rem;
+	letter-spacing: 1.0px;
+}
+h3 {
+	padding: 0 0 5px;
+	color: #4f4f4f;
+	font-size: 12rem;
+	letter-spacing: 2.5px;
+}
+
+/*_ Thumbnail _____*/
+ul.thumb li {
+	display: inline-block;
+	width: 45.5%;
+	max-width: 260px;
+}
+@media screen and	(-webkit-min-device-pixel-ratio:2),
+                	(min-resolution: 2dppx){
+	ul.thumb li {
+		max-width: 150px;
+	}
+}
+div.thumbs-image {
+	background: #ececec; /* Old browsers */
+	background: -moz-linear-gradient(top, #ececec 0%, #ffffff 40%, #ececec 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ececec), color-stop(40%,#ffffff), color-stop(100%,#ececec)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ececec 0%,#ffffff 40%,#ececec 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ececec 0%,#ffffff 40%,#ececec 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ececec 0%,#ffffff 40%,#ececec 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ececec 0%,#ffffff 40%,#ececec 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */
+}
+
+/*_ Go Detail _____*/
+#main a.go-detail {
+	clear: both;
+	float: right;
+	display: block;
+	margin: 25px 5px 20px;
+	color: #4f4f4f;
+	font-size: 11rem;
+	letter-spacing: 2px;
+}
+#main a.go-detail:after {
+	content: "＞";
+}
+
+
+/** Product *******************************/
+div#main.product .product-top h4,
+div#main.product .product-indiv h4 {
+	border-left: 2px solid #4f4f4f;
+	margin: 0 auto 3px;
+	color: #4f4f4f;
+	font-size: 12.0rem;
+	text-align: left;
+	text-indent: 3px;
+}
+
+
+
+/*===================================================================
+
+  Index
+
+===================================================================*/
+/** Introduction *******************************/
+/*_ Key Visual _____*/
+#introduction {
+	background: url(images/common/intro_bg.gif) repeat-x top;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 22px 0 0;
+}
+#key_visual {
+	background:  url(images/common/intro_m1500.jpg) no-repeat center 115px;
+	height: 350px;
+}
+#key_visual h2 {
+	background: url(images/common/beauty_reality.png) no-repeat center;
+	height: 34px;
+	text-indent: -9999px;
+}
+@media screen and	(-webkit-min-device-pixel-ratio:2),
+                	(min-resolution: 2dppx){
+	#introduction {
+		background-size: 1px 250px;
+		height: 250px;
+	}
+  	#key_visual {
+  		background-position: center 54px;
+		background-size: 300px;
+		height: 220px;
+	}
+  	#key_visual h2 {
+   		background-size: 150px;
+   		height: 34px;
+  	}
+}
+#introduction article {
+	padding: 28px 0;
+}
+#introduction p {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 10px 20px;
+	color: #666666;
+	font-size: 11.5rem;
+	letter-spacing: 1.5px;
+	line-height: 2.0rem;
+	text-align: left;
+}
+
+/** Product *******************************/
+#product ul.thumb li {
+	height: 300px;
+	padding: 2px;
+	text-align: center;
+	font-size: 11.5rem;
+}
+#product ul.thumb li:nth-child(1),
+#product ul.thumb li:nth-child(2) {
+	border-top: 1px solid #ccc;
+}
+#product ul.thumb li:nth-child(odd) {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+#product ul.thumb li:nth-child(even) {
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+#product ul.thumb li a {
+	display: block;
+	height: 130px;
+}
+#product ul.thumb li div.thumbs-image {
+	height: 187px;
+}
+#product ul.thumb li div.thumbs-image img {
+	height: 187px;
+}
+@media screen and	(-webkit-min-device-pixel-ratio:2),
+                	(min-resolution: 2dppx){
+	#product ul.thumb li {
+		height: 150px;
+	}
+	#product ul.thumb li a {
+		height: 65px;
+	}
+	#product ul.thumb li div.thumbs-image,
+	#product ul.thumb li div.thumbs-image img {
+		height: 94px;
+	}
+}
+#product ul.thumb li table {
+	width: 100%;
+}
+#product ul.thumb li table td {
+	height: 56px;
+	vertical-align: middle;
+}
+#product ul.thumb li h3 {
+	letter-spacing: 0;
+}
+#product ul.thumb li h4 {
+	background: url(images/common/arrow@2x.png) no-repeat right center;
+	width: 92%;
+	margin: 0 auto;
+	color: #796a4b;
+	font-family: "Lora", "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+}
+@media screen and	(-webkit-min-device-pixel-ratio:2),
+                	(min-resolution: 2dppx){
+	#product ul.thumb li h4 {
+		background-size: 9px;
+	}
+}
+
+/** Where to Buy *******************************/
+#where_to_buy ul {
+	width: 93.5%;
+	margin: 0 auto;
+}
+#where_to_buy ul li {
+	float: left;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url(images/common/arrow@2x.png) no-repeat 125px center;
+	width: 49.5%;
+	height: 37px;
+	padding: 13px 0 0 14px;
+	text-align: left;
+}
+@media screen and	(-webkit-min-device-pixel-ratio:2),
+                	(min-resolution: 2dppx){
+	#where_to_buy ul li {
+		background-size: 9px;
+	}
+}
+#where_to_buy ul li:nth-child(1),
+#where_to_buy ul li:nth-child(2) {
+	border-top: 1px solid #ccc;
+}
+#where_to_buy ul li:nth-child(odd) {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+#where_to_buy ul li:nth-child(even) {
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+#where_to_buy ul li a {
+	color: #796a4b;
+	font-size: 10.5rem;
+}
+
+
+/*===================================================================
+
+  Product
+
+===================================================================*/
+/** Top *******************************/
+div#main.product .product-top h3 {
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #444;
+	width: 96%;
+	margin: 0 auto 8px;
+	padding: 3px 0 4px;
+	font-size: 11.0rem;
+	text-align: left;
+	text-indent: 8px;
+}
+div#main.product .product-group {
+	margin: 0 0 20px;
+}
+div#main.product .product-category {
+	width: 92%;
+	margin: 0 auto 12px;
+}
+div#main.product .product-category li {
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	padding: 2px;
+}
+div#main.product .product-category li:last-child {
+	border-bottom: 1px solid #ccc;
+}
+div#main.product .product-category li a {
+	color: #796a4b;
+}
+div#main.product .product-category li div.thumbs-image {
+	float: left;
+	width: 58%;
+	height: 187px;
+}
+div#main.product .product-category li div.thumbs-image img {
+	height: 187px;
+}
+div#main.product .product-top .product-category li div.product-name {
+	float: right;
+	background: url(images/common/arrow@2x.png) no-repeat 105px center;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+	width: 42%;
+	height: 187px;
+	padding: 37px 0 0;
+	font-size: 10.0rem;
+	text-align: center;
+}
+@media screen and	(-webkit-min-device-pixel-ratio:2),
+                	(min-resolution: 2dppx){
+	div#main.product .product-category li {
+		height: 94px;
+	}
+	div#main.product .product-category li a {
+		height: 94px;
+	}
+	div#main.product .product-category li div.thumbs-image,
+	div#main.product .product-category li div.thumbs-image img,
+	div#main.product .product-top .product-category li div.product-name {
+		height: 94px;
+	}
+	div#main.product .product-top .product-category li div.product-name {
+		background-size: 9px;
+	}
+}
+
+/** Indiv *******************************/
+div#main.product .product-indiv div.product-title {
+	border-bottom: 1px solid #444;
+	height: 26px;
+	width: 96%;
+	margin: 0 auto;
+	padding: 0 0 5px;
+	text-align: left;
+}
+div#main.product .product-indiv div.product-title a,
+div#main.product .product-indiv div.product-title h3 {
+	color: #4c4c4c;
+}
+div#main.product .product-indiv span.group {
+	float: left;
+	font-size: 10.0rem;
+}
+div#main.product .product-indiv span.group:after {
+	content: " > ";
+}
+div#main.product .product-indiv span.category {
+	float: left;
+	font-size: 9.5rem;
+}
+div#main.product .product-indiv div.product-title h3 {
+	clear: both;
+	float: left;
+	padding: 5px 0 0;
+	color: #4c4c4c;
+	font-size: 14.0rem;
+	letter-spacing: 0px;
+	line-height: 1.0rem;
+}
+div#main.product .product-indiv a.product-list-link {
+	float: right;
+	display: block;
+	border-radius: 1px;
+	background: #E5E9E3;
+	box-shadow: 0px 0px 1px 0px #ccc;
+	margin: 0px 1px -1px 0;
+	padding: 4px 6px;
+	font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic Pro", Meiryo, Helvetica, Arial, sans-serif;
+	font-size: 10.0rem;
+}
+div#main.product .product-indiv div#product_image {
+	width: 100%;
+	margin: 25px auto 50px;
+}
+div#main.product .product-indiv div.carousel {
+	width: 100%;
+	max-width: 690px;
+	height: 170px;
+	margin: 0 auto;
+}
+div#main.product .product-indiv div.product-image-wrapper div {
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 0 0 0 2px #fff inset;
+	-moz-box-shadow: 0 0 0 2px #fff inset;
+	box-shadow: 0 0 0 2px #fff inset;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+	width: 210px;
+	height: 170px;
+	margin: 0 0 0 15px !important;
+	padding: 10px 0 0;
+}
+div#main.product .product-indiv div.single div.product-image-wrapper div {
+	margin: 0 auto !important;
+}
+div#main.product .product-indiv div.product-image-wrapper img {
+	width: 210px;
+	height: 150px;
+	margin: 0 auto;
+}
+@media screen and	(-webkit-min-device-pixel-ratio:2),
+                	(min-resolution: 2dppx) {
+	div#main.product .product-indiv div.product-image-wrapper div {
+		width: 210px;
+		height: 170px;
+		padding: 8px 0 0;
+	}
+	div#main.product .product-indiv div.product-image-wrapper img {
+		width: 210px;
+		height: 150px;
+	}
+}
+div#main.product .product-indiv div.carousel ul.slick-dots {
+	bottom: -28px;
+}
+div#main.product .product-indiv div.description {
+	width: 96%;
+	margin: 0 auto;
+	text-align: left;
+}
+div#main.product .product-indiv article {
+	padding: 0 0 12px;
+}
+div#main.product .product-indiv article h4 {
+	font-size: 9.5rem;
+}
+div#main.product .product-indiv article p,
+div#main.product .product-indiv article li {
+	padding: 7px 20px;
+	color: #666;
+	font-size: 11.5rem;
+	line-height: 2.0rem;
+	letter-spacing: 1.5px;
+}
+div#main.product .product-indiv article ul {
+	padding: 6px 0 8px;
+}
+div#main.product .product-indiv article li {
+	padding: 0 0 0 12px;
+	font-size: 11.0rem;
+}
+div#main.product .product-indiv article dl {
+	border: 1px solid #ccc;
+	margin: 5px 0 5px;
+	padding: 8px;
+	color: #4c4c4c;
+	font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic Pro", Meiryo, Helvetica, Arial, sans-serif;
+	font-size: 10.0rem;
+}
+div#main.product .product-indiv article dt {
+	border-top: 1px dashed #e5e5e5;
+	margin: 4px 0 0;
+	padding: 7px 2px 6px;
+	font-weight: bold;
+	text-indent: 0px;
+}
+div#main.product .product-indiv article dt:first-child {
+	border: none;
+	padding: 0 2px 6px;
+}
+div#main.product .product-indiv article dt:before {
+	content: "■ ";
+}
+div#main.product .product-indiv article dd {
+	padding: 0 0 4px;
+	text-indent: 20px;
+}
+div#main.product div#other_products a {
+	display: block;
+	background: #E1E9DF;
+	box-shadow: 0 2px 3px 0px rgba(100, 100, 100, 0.45);
+	margin: 0 0 15px;
+	padding: 15px 0;
+	color: #333;
+	font-size: 15.0rem;
+}
+
+/*===================================================================
+
+  Footer
+
+===================================================================*/
+/** Common *******************************/
+footer {
+	font-size: 10rem;
+	text-align: center;
+}
+footer div.to-the-top a,
+footer div.contact a {
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+	color: #4f4f4f;
+	letter-spacing: 1.0px;
+}
+footer div.fb-components,
+footer div.sub-nav,
+footer div.copyright {
+	background: #323232;
+	color: #ffffff;
+}
+
+/** to the Top *******************************/
+footer div.to-the-top {
+	height: 23px;
+	padding: 13px 0 0;
+}
+
+/** Contact *******************************/
+footer div.contact {
+	padding: 0 0 10px;
+}
+footer div.contact a {
+	display: block;
+	border: 1px solid #bbbbbb;
+	height: 29px;
+	width: 95%;
+	margin: 0 auto;
+	padding: 5px 0 0;
+}
+footer div.contact a img {
+	vertical-align: -4.0px;
+}
+@media screen and	(-webkit-min-device-pixel-ratio:2),
+                	(min-resolution: 2dppx){
+	footer div.contact a img{
+		width: 24px;
+		height: 16px;
+	}
+}
+
+/** Facebook Componets *******************************/
+footer div.fb-components {
+	overflow: hidden;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+	width: 100%;
+	height: 62px;
+	margin: 0 auto;
+	padding: 20px 0 14px;
+}
+footer div.fb-like {
+	-o-transform: scale(0.9,0.9);
+	-ms-transform: scale(0.9,0.9);
+	-moz-transform: scale(0.9,0.9);
+	-webkit-transform: scale(0.9,0.9);
+}
+
+/** Sub Nav *******************************/
+footer div.sub-nav {
+	height: 30px;
+	text-align: center;
+}
+footer div.sub-nav li {
+	display: inline-block;
+	border-right: 1px solid #eeeeee;
+	padding: 0 11px 0 8px;
+	text-align: center;
+	font-size: 9.5rem;
+}
+footer div.sub-nav li:last-child {
+	border-right: none;
+}
+
+/** Copyright *******************************/
+footer div.copyright {
+	clear: both;
+}
+footer div.copyright p {
+	padding: 0 0 10px;
+	font-size: 8.0rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
