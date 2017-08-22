@@ -5,14 +5,12 @@
 # - 使う前に、ソースパスとデプロイ先のパスを確認しましょう
 
 # ソースパス（デプロイするファイルがあるディレクトリを指定）
-SOURCE_PATH=/Users/kyo/Dropbox/Site/zanden_old/SOURCE/PC/
+SOURCE_PATH=/Users/kyo/Dev/site/zanden_old/SOURCE/PC/
 # デプロイ先（サイトのルートパスを指定する）
 DEPLOY_TO=/var/www/site/dev/zanden_test/
 
 SOURCE_FILES=(
-images/frontpage-m3000mk2.png
-images/indiv-m3000mk2.png
-images/model3000mk2@520x374.png
+jp/index.php
 )
 
 echo -e "\n${DEPLOY_TO} へデプロイを実行\n"

@@ -21,11 +21,6 @@
           <a class="dl-cat2017" href="../assets/pdf/Zanden_catalogue_2017SS_JP.pdf" target="_blank"><p>Catalogue Image Here.</p><span>Product catalogue 2017 SS<br/>(PDF [22.3MB] が新しいウィンドウで表示されます)</span></a>
         </li>
       </ul>
-      <ul>
-        <li style="float:none">
-          <a class="room-image" href="listening_room.php" style="background-color: #eee;"><p>Listening Room Image Here.</p><span>Zanden Listening Room オープン　試聴予約受付中</span></a>
-        </li>
-      </ul>
     </div>
   </div>
 </div>
