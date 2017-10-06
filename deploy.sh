@@ -10,7 +10,8 @@ SOURCE_PATH=/Users/kyo/Dev/site/zanden_old/SOURCE/PC/
 DEPLOY_TO=/var/www/site/dev/zanden_test/
 
 SOURCE_FILES=(
-jp/index.php
+jp/wheretobuy.php
+wheretobuy.php
 )
 
 echo -e "\n${DEPLOY_TO} へデプロイを実行\n"
