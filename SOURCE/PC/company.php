@@ -55,11 +55,14 @@ I have felt this strange feeling of disconnection that arises from this gap. And
     <div class="text">
     <h3>Contact Us</h3>
     <p class="no_indent">
-    6-6-2-101 Shinmori Asahiku Osaka-city<br />
-    Osaka, Japan 535-0022<br />
+    Mukunoki Hall<br />
+    1643 Amakadaki-cho<br />
+    Kishiwada-city<br />
+    Osaka, Japan<br />
+    596-0845<br />
     <br />
-    TEL : +81-6-6185-0404<br />
-    FAX : +81-6-6185-0405<br />
+    TEL : +81-72-355-8323<br />
+    FAX : +81-72-283-6289<br />
     <br />
     For Technical Information:<br />
     technical@zandenaudio.com<br />
