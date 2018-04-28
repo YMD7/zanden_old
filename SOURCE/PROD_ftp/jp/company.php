@@ -82,11 +82,10 @@
     <div class="text">
     <h3>お問い合わせ</h3>
     <p class="no_indent">
-    535-0022<br />
-    大阪市旭区新森6-6-2-101<br />
+    596-0845<br />
+    大阪府岸和田市阿間河滝町1558-1<br />
     <br />
-    TEL : 06-6185-0404<br />
-    FAX : 06-6185-0405<br />
+    TEL : 072-479-5007<br />
     <br />
     技術に関するお問い合わせ:<br />
     technical@zandenaudio.com<br />
