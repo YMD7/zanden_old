@@ -5,13 +5,13 @@
 # - 使う前に、ソースパスとデプロイ先のパスを確認しましょう
 
 # ソースパス（デプロイするファイルがあるディレクトリを指定）
-SOURCE_PATH=/Users/kyo/Dev/site/zanden_old/SOURCE/PC/
+SOURCE_PATH=/Users/kyo/Dev/zanden_old/SOURCE/PC/
 # デプロイ先（サイトのルートパスを指定する）
 DEPLOY_TO=/var/www/site/dev/zanden_test/
 
 SOURCE_FILES=(
-jp/wheretobuy.php
-wheretobuy.php
+jp/company.php
+company.php
 )
 
 echo -e "\n${DEPLOY_TO} へデプロイを実行\n"
