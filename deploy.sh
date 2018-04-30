@@ -10,6 +10,8 @@ SOURCE_PATH=/Users/kyo/Dev/zanden_old/SOURCE/PC/
 DEPLOY_TO=/var/www/site/dev/zanden_test/
 
 SOURCE_FILES=(
+jp/company.php
+company.php
 jp/wheretobuy.php
 wheretobuy.php
 )
