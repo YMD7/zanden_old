@@ -34,11 +34,10 @@
         <a href="http://www.zandenaudio.com/jp/" target="_blank">
         http://www.zandenaudio.com/jp/</a><br />
         <br />
-        535-0022<br />
-        大阪市旭区新森6-6-2-101<br />
+        596-0845<br />
+        大阪府岸和田市阿間河滝町1558-1<br />
         <br />
-        Phone: 81-6-6185-0404<br />
-        Fax: 81-6-6185-0405
+        Phone : 072-479-5007
         </td>
       </tr>
       <tr>
