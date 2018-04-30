@@ -60,7 +60,7 @@ I have felt this strange feeling of disconnection that arises from this gap. And
     Osaka, Japan<br />
     596-0845<br />
     <br />
-    TEL : +81-72-479-5007<br />
+    TEL: +81-72-479-5007<br />
     <br />
     For Technical Information:<br />
     technical@zandenaudio.com<br />

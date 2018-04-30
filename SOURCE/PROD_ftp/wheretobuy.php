@@ -68,12 +68,12 @@
         <a href="http://www.zandenaudio.com/" target="_blank">
         http://www.zandenaudio.com</a><br />
         <br />
-        6-6-2-101 Shinmori Asahiku<br />
-        Osaka-city, 535-0022<br />
-        Japan<br />
+        1558-1 Amakadaki-cho<br />
+        Kishiwada-city<br />
+        Osaka, Japan<br />
+        596-0845<br />
         <br />
-        Phone: 81-6-6185-0404<br />
-        Fax: 81-6-6185-0405
+        Phone: +81-72-479-5007
         </td>
       </tr>
       <tr>
