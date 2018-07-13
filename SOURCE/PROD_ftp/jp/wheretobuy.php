@@ -133,6 +133,23 @@
       <tr>
       <th></th>
         <td>
+        <h4>スロベニア</h4></td>
+        <td><h5>
+        KUZMA LTD</h5>
+        <a href="http://www.katltd.si/" target="_blank">
+        http://www.katltd.si/</a><br />
+        <br />
+        HOTEMAZE 17A<br />
+        SI-4205 PREDDVOR<br />
+        SLOVENIA<br />
+        <br />
+        E-mail: kat.trgovina@gmail.com<br />
+        Phone: +386 068 650 802
+        </td>
+      </tr>
+      <tr>
+      <th></th>
+        <td>
         <h4>セルビア</h4></td>
         <td><h5>
         BM</h5>
