@@ -44,7 +44,7 @@
 <!--      #HEADER      -->
 <div id="header">
   <div class="wrapper">
-  
+
     <a href="<?php echo $home ?>">
     <h1>Zanden Audio Systems Ltd.</h1></a>
     <div id="gnavi">
@@ -57,9 +57,6 @@
         </li>
         <li>
           <a href="<?php echo $home ?>awards.php">Awards</a>
-        </li>
-        <li>
-          <a href="<?php echo $home ?>listening_room.php">Listening Room</a>
         </li>
         <li>
           <a href="<?php echo $home ?>wheretobuy.php">Where to buy</a>
