@@ -75,6 +75,23 @@
         </td>
       </tr>
       <tr>
+      <th></th>
+        <td>
+        <h4>ベトナム</h4></td>
+        <td><h5>
+        Eland Audio</h5>
+        <a href="http://www.elandaudio.com/" target="_blank">
+        http://www.elandaudio.com</a><br />
+        <br />
+        6A Road 3 Binh An Ward<br />
+        District 2 Hochiminh City<br />
+        Vietnam<br />
+        <br />
+        E-mail: info@elandaudio.com<br />
+        Phone: +84 969 969 969
+        </td>
+      </tr>
+      <tr>
       <th>
       <h3>ヨーロッパ</h3></th>
         <td>
@@ -192,6 +209,22 @@
         E-mail: info@extreme-audio.com<br />
         Phone: 0216-574-38-77<br />
         Fax: 0216-574-38-46
+        </td>
+      </tr>
+      <tr>
+      <th></th>
+        <td>
+        <h4>スカンジナビア</h4>
+        <em>・スウェーデン</em><br />
+        <em>・デンマーク</em><br />
+        <em>・ノルウェー</em><br />
+        <em>・フィンランド</em></td>
+        <td><h5>
+        Audiotrade</h5>
+        <a href="http://www.audiotrade.se/" target="_blank">
+        http://www.audiotrade.se</a><br />
+        <br />
+        E-mail: mikael@audiotrade.se<br />
         </td>
       </tr>
       <tr>
