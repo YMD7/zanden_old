@@ -107,7 +107,7 @@
         Richmond, Surrey, TW10 7QT<br />
         United Kingdom<br />
         <br />
-        E-mail: info@audiofreaks.co.uk<br />
+        E-mail: info1@audiofreaks.co.uk<br />
         Phone: (+44) 208 948 4153<br />
         Fax: (+44) 208 948 4250
         </td>
