@@ -8,7 +8,7 @@
     </div>
   </div>
 
-  <div id="shoplist">
+  <div class="shop-list">
     <table>
       <tr>
       <th>

@@ -15,7 +15,7 @@
 
 
 <link rel="shortcut icon" href="<?php echo $domain ?>images/favicon.ico">
-<link rel="stylesheet" type="text/css" href="<?php echo $domain ?>style_20170522.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo $domain ?>style_20181223.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo $domain ?>js/fancybox/source/jquery.fancybox.css"/>
 <link href='http://fonts.googleapis.com/css?family=Cardo:400' rel='stylesheet' type='text/css'>
 <script src="https://use.typekit.net/ljp5zhr.js"></script>
