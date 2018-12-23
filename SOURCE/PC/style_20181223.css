@@ -1196,15 +1196,21 @@ div.buy{
 	background:url(images/buy_BG.gif) repeat-x;
 	height:406px;
 }
-div.buy h2{
-	background:url(images/buyTag.gif) no-repeat 30px 133px;
-	height:406px;
-	
-	text-indent:-9999px;
-}
-div.buy div.wrapper{
+div.buy #top div.wrapper{
 	background:url(images/buyM1200.jpg) no-repeat 130px 212px;
 	height:406px;
+}
+div.buy #top h2{
+	background:url(images/buyTag.gif) no-repeat 30px 133px;
+	height:406px;	
+	text-indent:-9999px;
+}
+div.shop-list-wrapper {
+	width: 816px;
+}
+div.shop-list-wrapper > h2 {
+	margin-top: 20px;
+	font-size: 24px;
 }
 div.shop-list{
 	border:8px solid #999;
