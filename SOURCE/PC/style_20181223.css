@@ -1223,16 +1223,24 @@ div.shop-list table{
 div.shop-list tr:hover{
 	background:#f5f5f5;
 }
+div.shop-list th {
+	width: 145px;
+}
+div.shop-list td:last-child {
+	width: 360px;
+}
 div.shop-list th, div.shop-list td{
 	padding:15px 0 20px 35px;
-	
-    vertical-align:top;
+  vertical-align:top;
 	line-height:15px;
 }
 div.shop-list h3, div.shop-list h4, div.shop-list h5{
 	font-weight:bold;
 	font-size:18px;
 	line-height:22px;
+}
+div.shop-list h4 {
+	width: 136px;
 }
 div.shop-list td em{
 	font-style:italic;

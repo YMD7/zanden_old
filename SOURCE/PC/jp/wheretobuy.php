@@ -25,6 +25,26 @@
         Phone: (852) 9181-8291
         </td>
       </tr>
+    </table>
+  </div>
+  
+  <div class="shop-list">
+    <table>
+      <tr>
+      <th>
+      <h3>アジア</h3></th>
+        <td>
+        <h4>香港</h4></td>
+        <td><h5>
+        Audio Exotics</h5>
+        <a href="http://www.audioexotics.hk/" target="_blank">
+        http://www.audioexotics.hk</a><br />
+        <br />
+        Contact: Mr. Jlam<br />
+        E-mail: info@audioexotics.com<br />
+        Phone: (852) 9181-8291
+        </td>
+      </tr>
       <tr>
       <th></th>
         <td>
