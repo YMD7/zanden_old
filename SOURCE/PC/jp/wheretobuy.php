@@ -9,7 +9,7 @@
   </div>
 
   <div class="wrapper shop-list-wrapper">
-    <h2>日本</h2>
+    <h2>国内</h2>
     <div class="shop-list">
       <table>
         <tr>
