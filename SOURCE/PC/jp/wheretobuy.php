@@ -172,7 +172,7 @@
           Vietnam<br />
           <br />
           E-mail: info@elandaudio.com<br />
-          Phone: +84 969 969 969
+          Phone: +84 972 027 027
           </td>
         </tr>
         <tr>

@@ -11,6 +11,7 @@ DEPLOY_TO=/var/www/site/dev/zanden_test/
 
 SOURCE_FILES=(
 jp/wheretobuy.php
+wheretobuy.php
 )
 
 echo -e "\n${DEPLOY_TO} へデプロイを実行\n"
