@@ -28,6 +28,79 @@
           展示機: アクセサリーのみ
           </td>
         </tr>
+        <tr>
+        <th>
+        <h3>関西</h3></th>
+          <td>
+          <h4>大阪</h4></td>
+          <td><h5>
+          株式会社シマムセン</h5>
+          <a href="https://www.shimamusen.co.jp/" target="_blank">
+          https://www.shimamusen.co.jp</a><br />
+          <br />
+          〒556-0005 大阪府大阪市浪速区日本橋4丁目8-11<br />
+          TEL: 06-6632-2851<br />
+          展示機: Modern Collection
+          </td>
+        </tr>
+        <tr>
+        <th></th>
+          <td></td>
+          <td><h5>
+          あなろぐふぁーむ</h5>
+          <a href="http://analog-farm.sblo.jp/" target="_blank">
+          http://analog-farm.sblo.jp</a><br />
+          <br />
+          〒596-0845 大阪府岸和田市阿間河滝町1643番地<br />
+          TEL: 090-4306-8989<br />
+          展示機: Modern Collection
+          </td>
+        </tr>
+        <tr>
+        <th></th>
+          <td></td>
+          <td><h5>
+          Luxury Audio ラグジュアリーオーディオ</h5>
+          <a href="http://www.luxuryaudio.org/" target="_blank">
+          http://www.luxuryaudio.org</a><br />
+          <br />
+          〒542-0081 大阪府大阪市中央区南船場1丁目10番12号<br />
+          Towaローゼンビル長堀201号室<br />
+          TEL: 06-6210-4221<br />
+          E-mail: info@luxuryaudio.org<br />
+          展示機: Modern Collection, Classic Collection（一部）
+          </td>
+        </tr>
+        <tr>
+        <th></th>
+          <td>
+          <h4>京都</h4></td>
+          <td><h5>
+          オーディオアミーゴ京都</h5>
+          <a href="http://audio-amigo.com/" target="_blank">
+          http://audio-amigo.com/</a><br />
+          <br />
+          〒614-8374 京都府八幡市男山石城4-18<br />
+          TEL: 075-981-1800<br />
+          E-mail: kyoto@audio-amigo.com<br />
+          展示機: Modern Collection, Classic Collection（一部）
+          </td>
+        </tr>
+        <tr>
+        <th>
+        <h3>九州</h3></th>
+          <td>
+          <h4>福岡</h4></td>
+          <td><h5>
+          吉田苑</h5>
+          <a href="http://www.yoshidaen.com/" target="_blank">
+          http://www.yoshidaen.com</a><br />
+          <br />
+          〒810-0015 福岡県福岡市中央区那の川2丁目9-30<br />
+          TEL: 092-522-5663 / FAX: 092-522-5812<br />
+          展示機: Modern Collection
+          </td>
+        </tr>
       </table>
     </div>
   </div>
